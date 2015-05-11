@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打赌</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper" style="opacity: 0;">
+	<section class="first_screen screen">
+		<div class="zhou">
+			<div class="inner">
+				<img src="images/zhou_middle.png" alt="" class="zhou_middle">
+				<div class="con">
+					<img src="images/title_1.png" alt="" class="title">
+					<div class="swear">
+						<div class="swear_con">
+							每天健身30分钟，每天健身
+						</div>
+					</div>
+				</div>
+				<img src="images/clock.png" alt="" class="bottom_img">
+			</div>
+		</div>
+	</section>
+			
+	<section class="second_screen screen">
+		<div class="zhou">
+			<div class="inner">
+				<img src="images/zhou_middle.png" alt="" class="zhou_middle">
+				<div class="con">
+					<img src="images/title_2.png" alt="" class="title">
+					<div class="swear">
+						<div class="swear_con">
+							<ul>
+								<li>开始：3.12</li>
+								<li>天数：21</li>
+								<li>每周签到：>3次</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<img src="images/clock.png" alt="" class="bottom_img">
+			</div>
+		</div>
+	</section>
+
+	<section class="third_screen screen">
+		<div class="light_div">
+			<img src="images/light.png" alt="" class="light_d">
+			<img src="images/stage.png" alt="" class="light_h">
+			<img src="images/clock2.png" alt="" class="light_l">
+		</div>
+		<img src="images/dare.png" alt="" class="lightb_img">
+	</section>
+
+	<section class="fourth_screen screen">
+		<img src="images/title_3.png" alt="" class="fourth_title">
+		<div class="fourth_div">
+			<img src="images/book_a.png" alt="" class="book_a">
+			<img src="images/book_b.png" alt="" class="book_b">
+		</div>
+	</section>
+
+	<section class="five_screen screen">
+		<div class="people_div">
+			<div class="img">
+				<div><img src="images/temp/pic.png" alt=""></div>
+			</div>
+			<p class="name">Hmeimei<span>发起</span></p>
+			<div class="shop_box">
+				<span class="tip"></span>
+				<div class="shop_msg">
+					<p>我想要土豪金镶钻iphone20</p>
+					<img src="images/temp/shop.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<img src="images/vs.png" alt="" class="vs_pic">
+		<div class="people_div">
+			<div class="img">
+				<div><img src="images/temp/pic.png" alt=""></div>
+			</div>
+			<p class="name">我<span>监督</span></p>
+			<div class="shop_box">
+				<span class="tip"></span>
+				<div class="shop_msg">
+					<h4>同意打赌，挑选礼物</h4>
+				</div>
+			</div>
+		</div>
+		<a href="http://www.dangdang.com" class="five_a"><img src="images/bet_btn.png" alt=""></a>
+		<p class="last_p"><a href="">选择第三方登录</a></p>
+	</section>
+
+</div>
+<img src="images/slide_btn.png" alt="" class="slide_img" style="display: none;">
+<div class="loading"><em></em></div>
+<style type="text/css" class="style"></style>
+<script src="js/zepto.min.js "></script>
+<script src="js/slideScreen.js"></script>
+<script>
+$(function(){
+    var slide = new Design($('.wrapper'),$('.screen'));
+    slide.init();
+})
+</script>
+</body>
+</html>
